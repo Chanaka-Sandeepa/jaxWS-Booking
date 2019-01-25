@@ -1,4 +1,4 @@
-package fr.msaidara.model;
+package com.chanaka.soapBooking.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

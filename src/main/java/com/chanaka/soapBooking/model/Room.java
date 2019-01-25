@@ -1,7 +1,6 @@
-package com.chanaka.springMVC.model;
+package com.chanaka.soapBooking.model;
 
 import javax.persistence.*;
-import java.util.List;
 
 /**
  * Entity bean with JPA annotations

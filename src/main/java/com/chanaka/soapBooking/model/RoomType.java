@@ -1,4 +1,4 @@
-package com.chanaka.springMVC.model;
+package com.chanaka.soapBooking.model;
 
 import javax.persistence.*;
 

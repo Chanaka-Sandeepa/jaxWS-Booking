@@ -1,0 +1,221 @@
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.chanaka.hotel/service" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="HotelService" targetNamespace="http://www.chanaka.hotel/service">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.chanaka.hotel/service" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.chanaka.hotel/service">
+            <xs:element name="addHotel" type="tns:addHotel"/>
+            <xs:element name="addHotelResponse" type="tns:addHotelResponse"/>
+            <xs:element name="deleteHotel" type="tns:deleteHotel"/>
+            <xs:element name="deleteHotelResponse" type="tns:deleteHotelResponse"/>
+            <xs:element name="getHotelById" type="tns:getHotelById"/>
+            <xs:element name="getHotelByIdResponse" type="tns:getHotelByIdResponse"/>
+            <xs:element name="inHotel" type="tns:InHotel"/>
+            <xs:element name="outHotel" type="tns:OutHotel"/>
+            <xs:element name="searchHotel" type="tns:searchHotel"/>
+            <xs:element name="searchHotelResponse" type="tns:searchHotelResponse"/>
+            <xs:element name="updateHotel" type="tns:updateHotel"/>
+            <xs:element name="updateHotelResponse" type="tns:updateHotelResponse"/>
+            <xs:complexType name="searchHotel">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="searchHotelResponse">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:OutHotel"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="OutHotel">
+                <xs:sequence>
+                    <xs:element name="id" type="xs:int"/>
+                    <xs:element minOccurs="0" name="name" type="xs:string"/>
+                    <xs:element minOccurs="0" name="address" type="xs:string"/>
+                    <xs:element minOccurs="0" name="city" type="xs:string"/>
+                    <xs:element minOccurs="0" name="country" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="updateHotel">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:InHotel"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="InHotel">
+                <xs:sequence>
+                    <xs:element name="id" type="xs:int"/>
+                    <xs:element minOccurs="0" name="name" type="xs:string"/>
+                    <xs:element minOccurs="0" name="address" type="xs:string"/>
+                    <xs:element minOccurs="0" name="city" type="xs:string"/>
+                    <xs:element minOccurs="0" name="country" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="updateHotelResponse">
+                <xs:sequence>
+                    <xs:element name="return" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="addHotel">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:InHotel"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="addHotelResponse">
+                <xs:sequence>
+                    <xs:element name="return" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getHotelById">
+                <xs:sequence>
+                    <xs:element name="arg0" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getHotelByIdResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="tns:OutHotel"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="deleteHotel">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:InHotel"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="deleteHotelResponse">
+                <xs:sequence>
+                    <xs:element name="return" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="BusinessException" type="tns:BusinessException"/>
+            <xs:complexType name="BusinessException">
+                <xs:sequence>
+                    <xs:element name="code" nillable="true" type="xs:string"/>
+                    <xs:element name="message" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="updateHotel">
+        <wsdl:part element="tns:updateHotel" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="deleteHotelResponse">
+        <wsdl:part element="tns:deleteHotelResponse" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addHotel">
+        <wsdl:part element="tns:addHotel" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="BusinessException">
+        <wsdl:part element="tns:BusinessException" name="BusinessException"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="updateHotelResponse">
+        <wsdl:part element="tns:updateHotelResponse" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="deleteHotel">
+        <wsdl:part element="tns:deleteHotel" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="searchHotelResponse">
+        <wsdl:part element="tns:searchHotelResponse" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="searchHotel">
+        <wsdl:part element="tns:searchHotel" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getHotelById">
+        <wsdl:part element="tns:getHotelById" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getHotelByIdResponse">
+        <wsdl:part element="tns:getHotelByIdResponse" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addHotelResponse">
+        <wsdl:part element="tns:addHotelResponse" name="parameters"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="HotelServiceEndpoint">
+        <wsdl:operation name="searchHotel">
+            <wsdl:input message="tns:searchHotel" name="searchHotel"> </wsdl:input>
+            <wsdl:output message="tns:searchHotelResponse" name="searchHotelResponse"> </wsdl:output>
+            <wsdl:fault message="tns:BusinessException" name="BusinessException"> </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="updateHotel">
+            <wsdl:input message="tns:updateHotel" name="updateHotel"> </wsdl:input>
+            <wsdl:output message="tns:updateHotelResponse" name="updateHotelResponse"> </wsdl:output>
+            <wsdl:fault message="tns:BusinessException" name="BusinessException"> </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="addHotel">
+            <wsdl:input message="tns:addHotel" name="addHotel"> </wsdl:input>
+            <wsdl:output message="tns:addHotelResponse" name="addHotelResponse"> </wsdl:output>
+            <wsdl:fault message="tns:BusinessException" name="BusinessException"> </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getHotelById">
+            <wsdl:input message="tns:getHotelById" name="getHotelById"> </wsdl:input>
+            <wsdl:output message="tns:getHotelByIdResponse" name="getHotelByIdResponse"> </wsdl:output>
+            <wsdl:fault message="tns:BusinessException" name="BusinessException"> </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="deleteHotel">
+            <wsdl:input message="tns:deleteHotel" name="deleteHotel"> </wsdl:input>
+            <wsdl:output message="tns:deleteHotelResponse" name="deleteHotelResponse"> </wsdl:output>
+            <wsdl:fault message="tns:BusinessException" name="BusinessException"> </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="HotelServiceSoapBinding" type="tns:HotelServiceEndpoint">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="searchHotel">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="searchHotel">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="searchHotelResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="BusinessException">
+                <soap:fault name="BusinessException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="updateHotel">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="updateHotel">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="updateHotelResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="BusinessException">
+                <soap:fault name="BusinessException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="addHotel">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="addHotel">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="addHotelResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="BusinessException">
+                <soap:fault name="BusinessException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getHotelById">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="getHotelById">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getHotelByIdResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="BusinessException">
+                <soap:fault name="BusinessException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="deleteHotel">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="deleteHotel">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="deleteHotelResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="BusinessException">
+                <soap:fault name="BusinessException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="HotelService">
+        <wsdl:port binding="tns:HotelServiceSoapBinding" name="HotelServiceEndpointPort">
+            <soap:address location="http://localhost:9090/product-WS-Hibernate/services/hotel"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

@@ -1,7 +1,7 @@
-package fr.msaidara.dao;
+package com.chanaka.soapBooking.dao;
 
 import java.util.List;
-import fr.msaidara.model.Product;
+import com.chanaka.soapBooking.model.Product;
 
 public interface ProductDAO {
 

@@ -11,8 +11,13 @@
 	<import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
 	
 	<jaxws:endpoint id="productservice"
-		implementor="fr.msaidara.services.ProductServiceEndpoint"
+		implementor="com.chanaka.soapBooking.services.ProductServiceEndpoint"
 		address="/product">
+	</jaxws:endpoint>
+
+	<jaxws:endpoint id="hotelservice"
+					implementor="com.chanaka.soapBooking.services.hotel.HotelServiceEndpoint"
+					address="/hotel">
 	</jaxws:endpoint>
 
 </beans>

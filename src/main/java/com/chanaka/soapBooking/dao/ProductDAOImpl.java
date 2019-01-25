@@ -1,13 +1,11 @@
-package fr.msaidara.dao;
+package com.chanaka.soapBooking.dao;
 
 import java.util.List;
-import fr.msaidara.model.Product;
+import com.chanaka.soapBooking.model.Product;
 import org.hibernate.SessionFactory;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.transaction.annotation.Transactional;

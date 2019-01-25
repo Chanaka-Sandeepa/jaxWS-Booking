@@ -1,17 +1,16 @@
-package fr.msaidara.services;
+package com.chanaka.soapBooking.services;
 
 import java.util.List;
 import java.util.ArrayList;
 
+import com.chanaka.soapBooking.api.InProduct;
+import com.chanaka.soapBooking.api.OutProduct;
+import com.chanaka.soapBooking.dao.ProductDAO;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import fr.msaidara.api.InProduct;
-import fr.msaidara.api.OutProduct;
-import fr.msaidara.model.Product;
-import fr.msaidara.dao.ProductDAO;
-
+import com.chanaka.soapBooking.model.Product;
 
 
 @Service("ProductService")

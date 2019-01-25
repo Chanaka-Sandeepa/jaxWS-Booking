@@ -1,4 +1,6 @@
-package com.chanaka.springMVC.model;
+package com.chanaka.soapBooking.model;
+
+import org.hibernate.annotations.ForeignKey;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -20,7 +22,7 @@ public class Contract {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "HOTEL_ID", nullable = false, foreignKey = @ForeignKey(name="CW_CONTRACT_HOTEL_FK"))
+    @JoinColumn(name = "HOTEL_ID", nullable = false)
     private Hotel hotel;
 
     @Column(name="START_DATE")

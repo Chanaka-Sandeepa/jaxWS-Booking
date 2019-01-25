@@ -1,4 +1,4 @@
-package fr.msaidara.services;
+package com.chanaka.soapBooking.services;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

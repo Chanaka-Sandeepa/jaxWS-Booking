@@ -1,7 +1,8 @@
-package fr.msaidara.services;
+package com.chanaka.soapBooking.services;
 
-import fr.msaidara.api.InProduct;
-import fr.msaidara.api.OutProduct;
+import com.chanaka.soapBooking.api.InProduct;
+import com.chanaka.soapBooking.api.OutProduct;
+
 import java.util.List;
 import javax.jws.WebParam;
 

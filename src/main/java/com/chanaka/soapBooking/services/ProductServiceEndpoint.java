@@ -1,7 +1,8 @@
-package fr.msaidara.services;
+package com.chanaka.soapBooking.services;
 
-import fr.msaidara.api.InProduct;
-import fr.msaidara.api.OutProduct;
+import com.chanaka.soapBooking.api.InProduct;
+import com.chanaka.soapBooking.api.OutProduct;
+
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 
-@WebService(serviceName="ProductService", targetNamespace="http://www.msaidara.product/service")
+@WebService(serviceName="ProductService", targetNamespace="http://www.chanaka.product/service")
 public class ProductServiceEndpoint implements ProductService {
 
 	@Autowired
