@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
-	<display-name>product-WS-Hibernate</display-name>
+	<display-name>hotel-WS-Hibernate</display-name>
 
 	<!-- listener to startup (spring) -->
 	<listener>

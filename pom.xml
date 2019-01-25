@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.chanaka.PRODUCT</groupId>
-  <artifactId>product-WS-Hibernate</artifactId>
+  <groupId>com.chanaka.BOOKING</groupId>
+  <artifactId>booking-WS-Hibernate</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>product-WS-Hibernate</name>
+  <name>booking-WS-Hibernate</name>
   <description>Apache CXF JAX-WS : Top down approach for developing SOAP based web service with spring and hibernate</description>
   <url>http://maven.apache.org</url>
  
@@ -150,7 +150,7 @@
 	
 	<build>
 		<!-- final war name -->
-		<finalName>product-WS-Hibernate</finalName>
+		<finalName>booking-WS-Hibernate</finalName>
 
 		<plugins>
 			<!-- plugin 1-maven war plugin -->

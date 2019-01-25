@@ -12,7 +12,7 @@ Apache CXF JAX-WS : Top down approach for developing SOAP based web service with
       mvn tomcat7:run 
 
 # Endpoint URL 
-      http://localhost:9090/product-WS-Hibernate/services/product
+      http://localhost:9090/hotel-WS-Hibernate/services/hotel
 
 # WSDL URL
-      http://localhost:9090/product-WS-Hibernate/services/product?wsdl
+      http://localhost:9090/hotel-WS-Hibernate/services/hotel?wsdl

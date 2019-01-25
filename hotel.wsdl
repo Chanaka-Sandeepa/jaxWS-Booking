@@ -215,7 +215,7 @@
     </wsdl:binding>
     <wsdl:service name="HotelService">
         <wsdl:port binding="tns:HotelServiceSoapBinding" name="HotelServiceEndpointPort">
-            <soap:address location="http://localhost:9090/product-WS-Hibernate/services/hotel"/>
+            <soap:address location="http://localhost:9090/hotel-WS-Hibernate/services/hotel"/>
         </wsdl:port>
     </wsdl:service>
 </wsdl:definitions>
