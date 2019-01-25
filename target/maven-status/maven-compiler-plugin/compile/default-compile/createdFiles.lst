@@ -1,0 +1,9 @@
+fr\msaidara\api\InProduct.class
+fr\msaidara\services\ProductService.class
+fr\msaidara\dao\ProductDAOImpl.class
+fr\msaidara\dao\ProductDAO.class
+fr\msaidara\model\Product.class
+fr\msaidara\api\OutProduct.class
+fr\msaidara\services\ProductServiceEndpoint.class
+fr\msaidara\services\ProductServiceImpl.class
+fr\msaidara\services\BusinessException.class

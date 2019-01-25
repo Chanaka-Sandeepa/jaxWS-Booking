@@ -16,10 +16,10 @@
 	<!-- dataSource configuration -->
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="org.hsqldb.jdbcDriver" />
-		<property name="url" value="jdbc:hsqldb:mem:dummy" />
-		<property name="username" value="sa" />
-		<property name="password" value="" />
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@192.168.4.53:1521:travelbox" />
+		<property name="username" value="TRAINING" />
+		<property name="password" value="TRAINING" />
 	</bean>
 
 	<!-- Transaction Manager -->

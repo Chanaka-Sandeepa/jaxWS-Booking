@@ -138,6 +138,14 @@
 		   <version>${log4j-extras.version}</version>
 	   </dependency>
 
+	   <dependency>
+		   <groupId>com.oracle</groupId>
+		   <artifactId>ojdbc</artifactId>
+		   <version>11.2.0</version>
+		   <scope>system</scope>
+		   <systemPath>${basedir}/ojdbc7.jar</systemPath>
+	   </dependency>
+
 	</dependencies>
 	
 	<build>
